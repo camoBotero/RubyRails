@@ -1,0 +1,21 @@
+<h1>Creador de usuarios</h1>
+
+<%= form_for :usuario, url: usuarios_path do |f| %>
+    <table>
+        <tr>
+            <td><%= f.label :nombre%></td>
+            <td><%= f.text_field :nombre%></td>
+        </tr>
+        <tr>
+            <td><%= f.label :apellido%>
+            <td><%= f.text_field :apellido%></td>
+        </tr>
+        <tr>
+            <td><%= f.label :correo%>
+            <td><%= f.text_field :correo%></td>
+        </tr>
+        <tr>
+            <td><%= f.submit%>
+        </tr>
+    </table>
+<% end %>
